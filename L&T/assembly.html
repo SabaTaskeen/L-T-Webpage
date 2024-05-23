@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&T Inida</title>
+    <link rel="icon" href="assets/L&T.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/L&T.png" class="logo">
+        <h1 class="title">CAD Productions</h1>
+        <i class="fa-solid fa-bars" id="bar"></i>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="assembly.html">Assembly</a>
+        </nav>
+    </header>
+    <div class="box"></div>
+    <section class="list">
+        <h1>ASSEMBLY</h1>
+        <div class="link-container">
+            <p onclick="showLinks()" class="links-title"><a href="fbassembly.html">FP Assembly</a></p>
+            <p id="link1" class="link"><a href="index.html">Checklist</a></p>
+            <p id="link2" class="link"><a href="assets/FP Assembly.pdf" onclick="openPDF('assets/FP Assembly.pdf')">OpenPDF</a></p>
+        </div>
+        <div class="link-container">
+            <p onclick="showLinks()" class="links-title"><a href="mbassembly.html">MB Assembly</a></p>
+            <p id="link1" class="link"><a href="index.html">Checklist</a></p>
+            <p id="link2" class="link"><a href="assets/MB Assembly.pdf" onclick="openPDF('assets/MB Assembly.pdf')">OpenPDF</a></p>
+        </div>
+        <div class="link-container">
+            <p onclick="showLinks()" class="links-title"><a href="dtassembly.html">DT Assembly</a></p>
+            <p id="link1" class="link"><a href="index.html">Checklist</a></p>
+            <p id="link2" class="link"><a href="assets/DT Assembly.pdf" onclick="openPDF('assets/DT Assembly.pdf')">OpenPDF</a></p>
+        </div>
+        <div class="link-container">
+            <p onclick="showLinks()" class="links-title"><a href="msbassembly.html">MSB Assembly</a></p>
+            <p id="link1" class="link"><a href="index.html">Checklist</a></p>
+            <p id="link2" class="link"><a href="assets/MSB Assembly.pdf" onclick="openPDF('assets/MSB Assembly.pdf')">OpenPDF</a></p>
+        </div>
+        
+    </section>
+    <style>
+        /* CSS styles */
+
+        .list{
+            position: absolute;
+    top: 23%;
+    left: 40%;
+    width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    height: 2000px;
+    padding: 20px;
+            
+        }
+        .list h1{
+            text-align: center;
+            padding: 0 0 20px 0;
+            border-bottom:  2px solid rgb(0, 0, 0);
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .links-title{
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 25px;
+            padding-right: 25px;
+            transition: .5s;
+            border-radius: 1px;
+        }
+        .links-title:hover{
+            border-radius: 5px;
+            background: #58c3ec;
+            cursor: pointer;
+        }
+
+        .link-container {
+            padding-left: 120px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: 30px 0;
+        }
+        
+        .link {
+            color: blue;
+            justify-content: space-between;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-top: 10px;
+            display: none;
+            font-weight: 700;
+            align-items: center;
+        }
+        .link a{
+            font-size: 1rem;
+            color: #ffffff;
+            margin-left: 1rem;
+            font-weight: 700;
+            border: 1px solid #044c84;
+            border-radius: 5px;
+            border-color: #000000;
+            background: #044c84;
+        }
+
+        /* Show links on hover */
+        .link-container:hover .link {
+            display: block;
+            transition: all 1s ease-in-out;
+        }
+    </style>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

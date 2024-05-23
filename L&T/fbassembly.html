@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    
+        <img src="assets/L&T.png" class="logo">
+        <h1 class="title">CAD Productions</h1>
+        <i class="fa-solid fa-bars" id="bar"></i>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="assembly.html">Assembly</a>
+        </nav>
+    </header>
+    <div class="box"></div>
+    <div class="heading">
+        <h2>FP Assembly</h2>
+    </div>
+    <section class="home">
+        <div class="checkbox">
+            <h1>CheckList</h1>
+            <label>
+                <input type="checkbox">
+                Initial Design Phase.
+            </label>
+            <label>
+                <input type="checkbox">
+                Material Selection.
+            </label>
+            <label>
+                <input type="checkbox">
+                Detailed Design and Validation.
+            </label>
+            <label>
+                <input type="checkbox">
+                Design for Manufacturability(DFM).
+            </label>
+            <label>
+                <input type="checkbox">
+                Prototyping and Testing.
+            </label>
+            <label>
+                <input type="checkbox">
+                Manufacturing Preparation.
+            </label>
+            <label>
+                <input type="checkbox">
+                Assembly Process.
+            </label>
+            <label>
+                <input type="checkbox">
+                Material Selection.
+            </label>
+            <label>
+                <input type="checkbox">
+                Simulation and Analysis.
+            </label>
+            <label>
+                <input type="checkbox">
+                Prototyping.
+            </label> 
+    <section>
+        <div class="remarks">
+            <h1>Remarks</h1>
+            <form id="form" class="txt_field">
+                <div class="input">
+                    <label for="name1"></label>
+                    <input type="text" placeholder="Enter Your Remark" id="write1">
+                </div>
+                <div class="input">
+                    <label for="name2"></label>
+                    <input type="text" placeholder="Enter Your Remark" id="write2">
+                </div>
+                <div class="input">
+                    <label for="name3"></label>
+                    <input type="text" placeholder="Enter Your Remark" id="write3">
+                </div>
+                <div class="input">
+                    <label for="name4"></label>
+                    <input type="text" placeholder="Enter Your Remark" id="write4">
+                </div>
+                <div class="input">
+                    <label for="name5"></label>
+                    <input type="text" placeholder="Enter Your Remark" id="write5">
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const form = document.getElementById('form');
+        const name1 = document.getElementById('write1');
+        const name2 = document.getElementById('write2');
+        const name3 = document.getElementById('write3');
+        const name4 = document.getElementById('write4');
+        const name5 = document.getElementById('write5');
+
+
+        form.addEventListener('submit' ,function(e){
+           e.preventDefault();
+
+           const name1Value = name1.value;
+           const name2Value = name2.value;
+           const name3Value = name3.value;
+           const name4Value = name4.value;
+           const name5Value = name5.value;
+
+           localStorage.setItem('name-1', name1Value);
+           localStorage.setItem('name-2', name2Value);
+           localStorage.setItem('name-3', name3Value);
+           localStorage.setItem('name-4', name4Value);
+           localStorage.setItem('name-5', name5Value);
+
+           window.location.href = "index.html";
+        })
+        function reload() {
+        window.location.reload();
+       }
+    </script>
+</body>
+</html>

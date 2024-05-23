@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&T Inida</title>
+    <link rel="icon" href="assets/L&T.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        
+        <img src="assets/L&T.png" class="logo">
+        <h1 class="title">CAD Productions</h1>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="assembly.html">Assembly</a>
+            
+        </nav>
+        
+    </header>
+    <section class="home">
+        <div class="box"></div>
+        <div class="center">
+            <h1>Admin</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forget Password?</div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="remarks1">
+            <h1>Remarks</h1>
+            <form>
+                    <div class="txt_field1">
+                        <span id="name-1"></span>
+                    </div>
+                    <div class="txt_field1">
+                        <span id="name-2"></span>
+                    </div>
+                    <div class="txt_field1">
+                        <span id="name-3"></span>
+                    </div>
+                    <div class="txt_field1">
+                        <span id="name-4"></span>
+                    </div>
+                    <div class="txt_field1">
+                        <span id="name-5"></span>
+                    </div>
+                </form>
+        </div>
+    </section>
+
+    <script>
+        const name1Value = localStorage.getItem('name-1');
+        const name2Value = localStorage.getItem('name-2');
+        const name3Value = localStorage.getItem('name-3');
+        const name4Value = localStorage.getItem('name-4');
+        const name5Value = localStorage.getItem('name-5');
+
+        document.getElementById('name-1').textContent = name1Value;
+        document.getElementById('name-2').textContent = name2Value;
+        document.getElementById('name-3').textContent = name3Value;
+        document.getElementById('name-4').textContent = name4Value;
+        document.getElementById('name-5').textContent = name5Value;
+
+    </script>
+</body>
+</html>
+
+
+
